@@ -19,7 +19,7 @@
 <p align="left">Code is able to work with small numbers.</p>
 
 <h3 align="left">How to run?</h3>
-<p align="left">You have to do git-clone, open command line interpreter and start compiling files, that are in directory, for example, cb_files. This is the path of the file cb_files: C:\Users\Artem\OneDrive\cb_files .</p>
+<p align="left">You have to do git-clone, open command line interpreter and start compiling files, that are in directory, for example, cb_files. This is the path of the file cb_files: C:\Users\Artem\OneDrive\cb_files></p>
 
 <p align="left">To compile files you have to write this command for all of files with extension .cpp:</p>
 
