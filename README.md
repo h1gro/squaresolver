@@ -12,11 +12,11 @@
 <p align="left">Programm is solving a square equation with coefficients, that user enters.</p>
 
 <h3 align="left">Features:</h3>
-<p align="left"> - Code is able to discover wrong coefficients from user and request new coefficients.
+<p align="left"> 1) Code is able to discover wrong coefficients from user and request new coefficients.
 
-<p align="left"> * Code is able to check himself for a mistake by tests, that user can add to tests.txt.
+<p align="left"> 2) Code is able to check himself for a mistake by tests, that user can add to tests.txt.
 
-<p align="left"> + Code is able to work with small numbers.</p>
+<p align="left"> 3) Code is able to work with small numbers.</p>
 
 <h3 align="left">How to run?</h3>
 <p align="left">You have to do git-clone, open command line interpreter and start compiling files, that are in directory, for example, cb_files. This is the path of the file cb_files: C:\Users\Artem\OneDrive\cb_files></p>
