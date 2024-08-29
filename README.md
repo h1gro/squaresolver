@@ -23,7 +23,7 @@
 
 <p align="left">To compile files you have to write this command for all of files with extension .cpp:</p>
 
-<p align="left">_C:\Users\Artem\OneDrive\cb_files>g++ main.cpp -c -o main.o_</p>
+<p align="left">_C:\Users\Artem\OneDrive\cb_files>g++ main.cpp -c -o main.o_
 
 <p align="left">After that you have to write this commands to apply together all files:</p>
 
