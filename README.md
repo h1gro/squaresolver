@@ -12,7 +12,7 @@
 <p align="left">Programm is solving a square equation with coefficients, that user enters.</p>
 
 <h3 align="left">Features:</h3>
-<p align="left">Code is able to discover wrong coefficients from user and request new coefficients.
+<p align="left"> - Code is able to discover wrong coefficients from user and request new coefficients.
 
 <p align="left">Code is able to check himself for a mistake by tests, that user can add to tests.txt.
 
@@ -32,4 +32,3 @@
 <p align="left">C:\Users\Artem\OneDrive\cb_files>main.exe</p>
 
 <p align="left">Congratulations, you run the programm! Enjoy!</p>
-
