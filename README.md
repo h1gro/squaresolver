@@ -19,4 +19,17 @@
 <p align="left">Code is able to work with small numbers.</p>
 
 <h3 align="left">How to run?</h3>
-<p align="left"> You have to download all files and compile it in cmd.</p>
+<p align="left"> You have to do git-clone, open command line interpreter and start compiling files.</p>
+
+<p align="left"> To compile files you have to write this command for all of files with extension .cpp:</p>
+
+<p align="left">g++ main.cpp -c -o main.o </p>
+
+<p align="left"> After that you have to write this commands:</p>
+
+<p align="left">g++ main.o solvesquare.o solvelinear.o utilits.o unittest.o -o main.exe</p>
+
+<p align="left">main.exe</p>
+
+<p align="left">Congratulations, you run the programm! Enjoy!</p>
+
