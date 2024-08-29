@@ -21,23 +21,30 @@
 <h3 align="left">How to run?</h3>
 <p align="left">You have to do git-clone, open command line interpreter and start compiling files, that are in directory, for example, cb_files.</p> 
 
-  
+<p align="left"></p>
+
 <p align="left">This is the path of the file cb_files: C:\Users\Artem\OneDrive\cb_files></p>
 
+<p align="left"></p>
 
 <p align="left">To compile files you have to write this command for all of files with extension .cpp:</p>
 
+<p align="left"></p>
 
 <p align="left">C:\Users\Artem\OneDrive\cb_files>g++ main.cpp -c -o main.o
 
+<p align="left"></p>
 
 <p align="left">After that you have to write this commands to apply together all files:</p>
 
+<p align="left"></p>
 
 <p align="left">C:\Users\Artem\OneDrive\cb_files>g++ main.o solvesquare.o solvelinear.o utilits.o unittest.o -o main.exe</p>
 
+<p align="left"></p>
 
 <p align="left">C:\Users\Artem\OneDrive\cb_files>main.exe</p>
 
+<p align="left"></p>
 
 <p align="left">Congratulations, you run the programm! Enjoy!</p>
