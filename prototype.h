@@ -1,15 +1,24 @@
 #ifndef IFDEF_CONST
 #define IFDEF_CONST
 
-#include <TXLib.h>
 #include <stdio.h>
 #include <math.h>
+#include <assert.h>
+
+/**
+ * @param EPSILON the minimum difference between two
+ * elements in which that two elements can be equal
+ */
+const double EPSILON          = 0.0001;
+const int    NUMBER_TEST_ARGS = 6;
+
+static const char* TESTS = "tests.txt";
 
 /**
  * @brief Tests Structure for tests
  * @param a square equation coefficient
  * @param b square equation coefficient
- * @param ñ square equation coefficient
+ * @param ï¿½ square equation coefficient
  * @param x1exp the first expected root
  * @param x2exp the second expected root
  * @param nRootsExp the expected number of roots
@@ -27,7 +36,7 @@ struct Tests
  * @return Return the number of roots
  * @param a square equation coefficient
  * @param b square equation coefficient
- * @param ñ square equation coefficient
+ * @param ï¿½ square equation coefficient
  * @param x1 the first root
  * @param x2 the second root
  */
@@ -53,7 +62,7 @@ int Tester(struct Tests struct_test, int nTest);
  * coefficients b, c and number of roots
  * @return Return the number of roots
  * @param b linear equation coefficient
- * @param ñ linear equation coefficient
+ * @param ï¿½ linear equation coefficient
  * @param x1 first root
  */
 int SolveLinear(double b, double c, double* x1);
@@ -110,9 +119,5 @@ enum Tests_results
     INCORRECT_TEST = 7,
     FILE_NOT_OPENED = 8,
 };
-/**
- * @param EPSILON the minimum difference between two
- * elements in which that two elements can be equal
- */
-const double EPSILON = 0.0001;
+
 #endif

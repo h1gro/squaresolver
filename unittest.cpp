@@ -21,6 +21,7 @@ int Tester(struct Tests struct_test, int nTest)
 
         return TEST_FAILED;
     }
+
     else
     {
         printf("Successfully\n");
@@ -32,23 +33,23 @@ int Tester(struct Tests struct_test, int nTest)
 int ScanTestsFile()
 {
     struct Tests struct_test = {};
-    int nTest = 0;
+    int num_test = 0;
 
-    FILE * file = fopen("tests.txt", "r");
+    FILE * file = fopen(TESTS, "r");
+
     if (file == NULL)
     {
         printf("file not opened");
         return FILE_NOT_OPENED;
     }
 
-    while( fscanf(file,
-                  "%lg %lg %lg %lg %lg %d",
-                    &struct_test.a, &struct_test.b, &struct_test.c,
-                    &struct_test.x1exp, &struct_test.x2exp, &struct_test.nRootsExp) == 6)
+    while(fscanf(file, "%lg %lg %lg %lg %lg %d",
+                &struct_test.a, &struct_test.b, &struct_test.c,
+                &struct_test.x1exp, &struct_test.x2exp, &struct_test.nRootsExp) == NUMBER_TEST_ARGS)
     {
         int check = 0;
 
-        check = Tester(struct_test, nTest);
+        check = Tester(struct_test, num_test);
 
         if (check == TEST_FAILED)
         {
@@ -56,8 +57,9 @@ int ScanTestsFile()
             return INCORRECT_TEST;
         }
 
-        nTest++;
+        num_test++;
     }
+
     fclose(file);
     return ALL_TESTS_DONE;
 }
