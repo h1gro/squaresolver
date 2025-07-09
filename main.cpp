@@ -22,4 +22,6 @@ int main()
         int nRoots = SolveSquare (a, b, c, &x1, &x2);
         PrintResult(nRoots, x1, x2);
     }
+
+    return 0;
 }

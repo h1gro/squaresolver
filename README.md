@@ -1,50 +1,39 @@
-<h1 align="center">Hi 👋, I'm Artem</h1>
-<h3 align="center">Student of MIPT</h3>
+# SQUARE SOLVER
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">https://t.me/ggggguuuuddddd
-</p>
+## About task
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
+The programm solves any square equation, that user enters. The program receives 3 values as input, namely coefficients a, b, c. And the output is the roots and their number.
 
-<h3 align="left">Square:</h3>
-<p align="left">Programm is solving a square equation with coefficients, that user enters.</p>
+$$
+a\cdot x^2 + b\cdot x + c = 0
+$$
 
-<h3 align="left">Features:</h3>
-<p align="left"> 1) Code is able to discover wrong coefficients from user and request new coefficients.
+The solution of this equation is expressed as:
 
-<p align="left"> 2) Code is able to check himself for a mistake by tests, that user can add to tests.txt.
+$$
+x = \frac{-b \pm \sqrt{D}}{2 \cdot a}
+$$
 
-<p align="left"> 3) Code is able to work with small numbers.</p>
+where the discriminant formula:
 
-<h3 align="left">How to run?</h3>
-<p align="left">You have to do git-clone, open command line interpreter and start compiling files, that are in directory, for example, cb_files.</p> 
+$$
+D = b^2 - 4\cdot a\cdot c
+$$
 
-<p align="left">         </p>
+## Tools
 
-<p align="left">This is the path of the file cb_files: C:\Users\Artem\OneDrive\cb_files></p>
+### Unit tests
 
-<p align="left">        </p>
+Built-in unit tests go through tester before processing users equation. If some king of test is not going well, the user will get message about error in tests, and the programm will end immidiately.
 
-<p align="left">To compile files you have to write this command for all of files with extension .cpp:</p>
+### Processing of results
 
-<p align="left">        </p>
+All different results of the users square equation processing by returning values. Solution depends on this values like 1 root, 2 roots, etc. It organized by switch.
 
-<p align="left">C:\Users\Artem\OneDrive\cb_files>g++ main.cpp -c -o main.o
+### Double and Float
 
-<p align="left">     </p>
+The project except integers includes floating-point numbers.
 
-<p align="left">After that you have to write this commands to apply together all files:</p>
-
-<p align="left">      </p>
-
-<p align="left">C:\Users\Artem\OneDrive\cb_files>g++ main.o solvesquare.o solvelinear.o utilits.o unittest.o -o main.exe</p>
-
-<p align="left">       </p>
-
-<p align="left">C:\Users\Artem\OneDrive\cb_files>main.exe</p>
-
-<p align="left">        </p>
-
-<p align="left">Congratulations, you run the programm! Enjoy!</p>
+$$
+1.2345, -55.777, -153.153, ...
+$$
