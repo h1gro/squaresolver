@@ -1,4 +1,4 @@
-#include "prototype.h"
+#include "square.h"
 
 int Tester(struct Tests struct_test, int nTest)
 {
@@ -10,7 +10,8 @@ int Tester(struct Tests struct_test, int nTest)
         || !IsEqual(x1, struct_test.x1exp)
         || !IsEqual(x2, struct_test.x2exp))
     {
-        printf("\n" "error test = %d, a = %lg, b = %lg, c = %lg\n"
+        printf("\n" "Pay attention please, tester returns error!\n"
+               "error test = %d, a = %lg, b = %lg, c = %lg\n"
                " x1 = %lg, x2 = %lg, nRoots = %d\n"
                "expected, x1exp = %lg, x2exp = %lg, nRootsExp = %d\n"
                "x1-x1exp = %lg, x2-x2exp= %lg\n\n",
@@ -24,7 +25,7 @@ int Tester(struct Tests struct_test, int nTest)
 
     else
     {
-        printf("Successfully\n");
+        //printf("Successfully\n");
 
         return TEST_DONE;
     }
@@ -35,13 +36,9 @@ int ScanTestsFile()
     struct Tests struct_test = {};
     int num_test = 0;
 
-    FILE * file = fopen(TESTS, "r");
+    FILE* file = fopen(TESTS, "r");
 
-    if (file == NULL)
-    {
-        printf("file not opened");
-        return FILE_NOT_OPENED;
-    }
+    CheckFile(file);
 
     while(fscanf(file, "%lg %lg %lg %lg %lg %d",
                 &struct_test.a, &struct_test.b, &struct_test.c,
@@ -53,13 +50,14 @@ int ScanTestsFile()
 
         if (check == TEST_FAILED)
         {
-            fclose(file);
+            CheckFclose(file);
             return INCORRECT_TEST;
         }
 
         num_test++;
     }
 
-    fclose(file);
+    CheckFclose(file);
+
     return ALL_TESTS_DONE;
 }

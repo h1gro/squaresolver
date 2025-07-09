@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "prototype.h"
+#include "square.h"
 
 int main()
 {
@@ -11,6 +11,8 @@ int main()
 
     if (identificator == ALL_TESTS_DONE)
     {
+        printf("Enter your coefficients a, b, c \nof square equation a*x^2 + b*x + c = 0:\n");
+
         while (scanf("%lg %lg %lg", &a, &b, &c) != 3)
         {
             printf("wrong input");

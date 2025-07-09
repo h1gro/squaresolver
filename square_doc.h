@@ -88,6 +88,9 @@ void ClearBuffer();
  */
 bool IsEqual(double elem1, double elem2);
 
+void CheckFile(FILE* file);
+void CheckFclose(FILE* file_ptr);
+
 /**
  * @brief Number_of_roots enumeration of constants that mean number of roots
  * @param NO_ROOTS the number of roots is zero
