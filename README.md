@@ -20,6 +20,31 @@ $$
 D = b^2 - 4\cdot a\cdot c
 $$
 
+## How to use
+
+There is Makefile in the project, so to compile all files and start the programm, you have to open a terminal and write:
+
+```C
+$ make    # compilation
+$./square # run exe file
+```
+After start the programm makes diagnoses of system by unit tests, if all tests went well, you will be able to enter coefficients of the square equation in **order** (a, b, c) and separated by a **space**. Example:
+
+```C
+Enter your coefficients a, b, c
+of square equation a*x^2 + b*x + c = 0:
+
+4 9 3                  # a b c
+
+or
+
+sqrt(9) 2.4 -3         # a b c
+
+or
+
+-351.153 52.9 099014.1 # a b c
+```
+
 ## Tools
 
 ### Unit tests
@@ -37,3 +62,13 @@ The project except integers includes floating-point numbers.
 $$
 1.2345, -55.777, -153.153, ...
 $$
+
+### Taking the root of an imput number
+
+It is possible to take the square root of any number, that user enters. The syntaxis of the command:
+
+$$
+\sqrt x \iff sqrt(x)
+$$
+
+where x is your number.

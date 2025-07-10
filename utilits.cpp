@@ -54,3 +54,8 @@ void CheckFclose(FILE* file_ptr)
         printf("file closed wrong, fclose_return = %d\n", fclose_return);
     }
 }
+
+bool IsNumber(char symbol)
+{
+    return (('0' <= symbol) && (symbol <= '9'));
+}

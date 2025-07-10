@@ -13,14 +13,17 @@ flags = -D _DEBUG -ggdb3 -std=c++17 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop
 
 all: square clean
 
-square: main.o solvesquare.o unittest.o utilits.o
-	g++ main.o solvesquare.o unittest.o utilits.o $(flags) -o square
+square: main.o solvesquare.o scanargs.o unittest.o utilits.o
+	g++ main.o solvesquare.o scanargs.o unittest.o utilits.o $(flags) -o square
 
 main.o: main.cpp
 	g++ -c $(flags) main.cpp
 
 solvesquare.o: solvesquare.cpp
 	g++ -c $(flags) solvesquare.cpp
+
+scanargs.o: scanargs.cpp
+	g++ -c $(flags) scanargs.cpp
 
 unittest.o: unittest.cpp
 	g++ -c $(flags) unittest.cpp
