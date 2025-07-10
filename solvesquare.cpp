@@ -21,6 +21,11 @@ int SolveSquare (double a, double b, double c, double* x1, double* x2)
             *x1 = (-b + sqrt_D) / (2 * a);
             *x2 = (-b - sqrt_D) / (2 * a);
 
+            if (IsEqual(*x1, *x2))
+            {
+                return ONE_ROOT;
+            }
+
             return TWO_ROOTS;
         }
 
